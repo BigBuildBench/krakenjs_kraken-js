@@ -1,0 +1,75 @@
+{
+  "name": "kraken-js",
+  "version": "2.5.0",
+  "description": "An express-based Node.js web application bootstrapping module.",
+  "keywords": [
+    "node.js",
+    "node",
+    "javascript",
+    "js",
+    "web",
+    "express",
+    "connect"
+  ],
+  "main": "index.js",
+  "directories": {
+    "example": "./example",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "cover": "istanbul cover tape -- test/*.js",
+    "lint": "jshint -c .jshintrc index.js lib/ middleware/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krakenjs/kraken-js.git"
+  },
+  "author": "Erik Toth <ertoth@paypal.com>",
+  "contributors": [
+    {
+      "name": "Jeff Harrell",
+      "email": "jeharrell@paypal.com"
+    },
+    {
+      "name": "Trevor Livingston",
+      "email": "trlivingston@paypal.com"
+    },
+    {
+      "name": "Lenny Markus",
+      "email": "lmarkus@paypal.com"
+    },
+    {
+      "name": "Jean-Charles Sisk",
+      "email": "jsisk@paypal.com"
+    },
+    {
+      "name": "Gabriel J. Csapo",
+      "email": "gacsapo@paypal.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "engines": {
+    "node": ">= 4"
+  },
+  "devDependencies": {
+    "consolidate": "^0.15.1",
+    "dustjs-linkedin": "^2.6.2",
+    "ejs": "^2.3.1",
+    "express": "^4.8.4",
+    "istanbul": "^0.4.5",
+    "jade": "^1.9.2",
+    "jshint": "^2.6.3",
+    "supertest": "^4.0.2",
+    "tape": "^4.0.0"
+  },
+  "peerDependencies": {
+    "express": "^4.8.4"
+  }
+}
